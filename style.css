@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #257d5b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-main {
+  width: 500px;
+  height: 600px;
+  background-color: #4cfdb9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.container-add {
+  width: 400px;
+  height: 80px;
+  text-align: center;
+}
+.input-text {
+  height: 24px;
+  width: 324px;
+  font-size: 18px;
+}
+.container-add button {
+  height: 30px;
+}
+.container-list {
+  border: 1px solid green;
+  width: 450px;
+  height: 90%;
+  background-color: rgba(100, 100, 100, 0.2) !important;
+  overflow-y: scroll;
+}
+ul {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+h3 {
+  color: #007d4d;
+}
+li {
+  position: relative;
+  list-style: none;
+  margin-top: 5px;
+  display: flex;
+  border: 1px solid rgba(30, 71, 30, 0.219);
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px;
+  background-color: rgba(100, 100, 100, 0.5);
+}
+li > p {
+  color: white;
+  margin-right: 35px;
+  padding: 5px;
+  text-align: left;
+}
+ul .feito {
+  text-decoration: line-through;
+}
+li > button {
+  height: 24px;
+  cursor: pointer;
+}
+
+li > i {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 20px;
+}
+li > i:hover {
+  color: rgb(255, 255, 255);
+}
+
+.h3-add {
+  margin-bottom: 10px;
+}
+button {
+  cursor: pointer;
+  padding: 5px;
+  border-style: none;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #257d5b;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* mobile resposible */
+
+@media only screen and (max-width: 600px) {
+  .container-main {
+    width: 320px;
+    height: 500px;
+    margin: auto;
+  }
+  .container-list {
+    width: 300px;
+    height: 90%;
+  }
+  .input-text {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  main {
+    width: 100%;
+    height: 100vh;
+  }
+  .container-main {
+    width: 280px;
+    margin-left: 10px;
+  }
+  .container-list {
+    width: 270px;
+    height: 90%;
+  }
+  .input-text {
+    width: 200px;
+  }
+}
