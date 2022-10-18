@@ -107,7 +107,16 @@ button:hover {
 .hidden {
   display: none;
 }
-
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  width: 30px;
+  margin: 4px;
+}
 /* mobile resposible */
 
 @media only screen and (max-width: 600px) {
